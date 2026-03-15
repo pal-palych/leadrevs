@@ -98,9 +98,9 @@ export default function Navbar() {
                               item?.href
                                 ? item?.external
                                   ? item.href
-                                  : item?.href
-                                    ? `/${item.href}`
-                                    : "/"
+                                  : item?.href.startsWith("/") || item?.href.startsWith("#")
+                                    ? item.href
+                                    : `/${item.href}`
                                 : "/"
                             }
                             onClick={navigationHandler}
