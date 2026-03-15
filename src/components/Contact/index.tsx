@@ -76,6 +76,7 @@ export default function Contact() {
               </h3>
               <form action="https://formspree.io/f/xwvrnzzw" method="POST">
                 <input type="hidden" name="_next" value="https://leadrevs.app/contact?submitted=true" />
+                <input type="hidden" name="_redirect" value="https://leadrevs.app/contact?submitted=true" />
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-5">
