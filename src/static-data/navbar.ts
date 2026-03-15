@@ -16,42 +16,14 @@ export const navbarData: NavbarItem[] = [
   },
   {
     id: uuid(),
-    title: "Portfolio",
-    href: "#portfolio",
-    external: false,
-  },
-  {
-    id: uuid(),
     title: "Pricing",
     href: "#pricing",
     external: false,
   },
   {
     id: uuid(),
-    title: "Pages",
-    submenu: [
-      {
-        id: uuid(),
-        title: "Services",
-        href: "/service",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Portfolio",
-        href: "/portfolio",
-      },
-      {
-        id: uuid(),
-        title: "Blog",
-        href: "/blog",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Contact",
-        href: "/contact",
-      },
-    ],
+    title: "Contact",
+    href: "/contact",
+    external: false,
   },
 ];

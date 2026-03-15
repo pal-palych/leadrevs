@@ -4,8 +4,8 @@ import { v4 as uuid } from "uuid";
 export const footerLinks: FooterLink[] = [
   {
     id: uuid(),
-    title: "Local SEO",
-    href: "/service/local-seo",
+    title: "Website Design",
+    href: "/service/website-design",
     external: false,
   },
   {
@@ -16,8 +16,8 @@ export const footerLinks: FooterLink[] = [
   },
   {
     id: uuid(),
-    title: "Web Design",
-    href: "/service/web-design",
+    title: "Local SEO & GBP",
+    href: "/service/google-business-profile",
     external: false,
   },
   {
@@ -32,25 +32,25 @@ export const footerNewsData: FooterLink[] = [
   {
     id: uuid(),
     title: "HVAC",
-    href: "#",
+    href: "/#services",
     external: false,
   },
   {
     id: uuid(),
     title: "Plumbing",
-    href: "#",
+    href: "/#services",
+    external: false,
+  },
+  {
+    id: uuid(),
+    title: "Auto Repair",
+    href: "/#services",
     external: false,
   },
   {
     id: uuid(),
     title: "Roofing",
-    href: "#",
-    external: false,
-  },
-  {
-    id: uuid(),
-    title: "Electricians",
-    href: "#",
+    href: "/#services",
     external: false,
   },
 ];
@@ -58,26 +58,26 @@ export const footerNewsData: FooterLink[] = [
 export const footerQuickLinks: FooterLink[] = [
   {
     id: uuid(),
-    title: "About Us",
-    href: "#about",
+    title: "About",
+    href: "/#about",
     external: false,
   },
   {
     id: uuid(),
-    title: "Blog",
-    href: "/blog",
+    title: "Services",
+    href: "/service",
     external: false,
   },
   {
     id: uuid(),
-    title: "FAQ",
+    title: "Pricing",
+    href: "/#pricing",
+    external: false,
+  },
+  {
+    id: uuid(),
+    title: "Contact",
     href: "/contact",
-    external: false,
-  },
-  {
-    id: uuid(),
-    title: "Privacy Policy",
-    href: "#",
     external: false,
   },
 ];
