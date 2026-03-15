@@ -21,6 +21,14 @@ export default function Contact() {
 
     setSubmitting(false);
     setSubmitted(true);
+
+    // Fire GA conversion event
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "generate_lead", {
+        event_category: "form",
+        event_label: "free_audit_request",
+      });
+    }
   };
 
   if (submitted) {
