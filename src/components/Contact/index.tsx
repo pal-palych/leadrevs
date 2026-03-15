@@ -1,4 +1,51 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Contact() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    await fetch("https://formspree.io/f/xwvrnzzw", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    setSubmitting(false);
+    setSubmitted(true);
+  };
+
+  if (submitted) {
+    return (
+      <section id="contact" className="bg-white py-20 lg:py-[120px]">
+        <div className="container">
+          <div className="mx-auto max-w-[600px] text-center">
+            <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
+              <svg className="h-10 w-10 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <h2 className="mb-5 text-3xl font-bold text-dark sm:text-4xl md:text-[45px]">
+              Got it — audit on the way
+            </h2>
+            <p className="text-lg text-body-color">
+              I&apos;ll personally review your business and send you a custom
+              audit within 24–48 hours. Check your inbox for a confirmation.
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="contact" className="bg-white py-20 lg:py-[120px]">
       <div className="container">
@@ -74,9 +121,7 @@ export default function Contact() {
               <h3 className="mb-6 text-xl font-bold text-dark">
                 Request your free audit
               </h3>
-              <form action="https://formspree.io/f/xwvrnzzw" method="POST">
-                <input type="hidden" name="_next" value="https://leadrevs.app/contact?submitted=true" />
-                <input type="hidden" name="_redirect" value="https://leadrevs.app/contact?submitted=true" />
+              <form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-5">
@@ -85,6 +130,7 @@ export default function Contact() {
                         name="name"
                         placeholder="Your name"
                         className="input-field"
+                        required
                       />
                     </div>
                   </div>
@@ -95,6 +141,7 @@ export default function Contact() {
                         name="company"
                         placeholder="Business name"
                         className="input-field"
+                        required
                       />
                     </div>
                   </div>
@@ -105,6 +152,7 @@ export default function Contact() {
                         name="phone"
                         placeholder="Phone number"
                         className="input-field"
+                        required
                       />
                     </div>
                   </div>
@@ -129,8 +177,12 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="bg-primary hover:bg-primary/90 w-full rounded-md p-4 text-base font-semibold text-white transition">
-                      Send Me My Free Audit
+                    <button
+                      type="submit"
+                      disabled={submitting}
+                      className="bg-primary hover:bg-primary/90 w-full rounded-md p-4 text-base font-semibold text-white transition disabled:opacity-60"
+                    >
+                      {submitting ? "Sending..." : "Send Me My Free Audit"}
                     </button>
                     <p className="mt-4 text-center text-sm text-body-color">
                       No spam. No sales pitch. Just a real audit from a real person.
