@@ -18,6 +18,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8ENCC7L4D"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-S8ENCC7L4D');
+            `,
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <NextTopLoader
           color="#006BFF"
