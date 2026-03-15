@@ -5,19 +5,19 @@ export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
     title: "About",
-    href: "#about",
+    href: "/#about",
     external: false,
   },
   {
     id: uuid(),
     title: "Services",
-    href: "#services",
+    href: "/service",
     external: false,
   },
   {
     id: uuid(),
     title: "Pricing",
-    href: "#pricing",
+    href: "/#pricing",
     external: false,
   },
   {
