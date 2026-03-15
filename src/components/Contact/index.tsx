@@ -74,7 +74,7 @@ export default function Contact() {
               <h3 className="mb-6 text-xl font-bold text-dark">
                 Request your free audit
               </h3>
-              <form>
+              <form action="https://formspree.io/f/xwvrnzzw" method="POST">
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-5">
