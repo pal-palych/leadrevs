@@ -8,13 +8,10 @@ export default function FooterContact() {
         Contact Info
       </h3>
       <p className="mb-1 text-base font-medium text-body-color">
-        hello@leadrevs.com
+        info@leadrevs.app
       </p>
       <p className="mb-1 text-base font-medium text-body-color">
         Raleigh-Durham, North Carolina
-      </p>
-      <p className="mb-1 text-base font-medium text-body-color">
-        (919) 555-0123
       </p>
     </div>
   );
