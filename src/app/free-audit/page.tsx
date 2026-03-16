@@ -328,22 +328,27 @@ export default function FreeAuditLanding() {
                   <h4 className="mb-2 text-base font-bold text-[#1d2144]">
                     Local Visibility Summary
                   </h4>
-                  <div className="mb-3 space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-[#959cb1]">Google keywords (page 1)</span>
-                      <span className="font-semibold text-[#1d2144]">4</span>
+                  <div className="mb-3 space-y-1">
+                    <p className="mb-2 text-xs font-semibold text-[#959cb1] uppercase tracking-wider">Your business vs. top local competitor</p>
+                    <div className="grid grid-cols-3 gap-1 text-sm">
+                      <span className="text-[#959cb1]"></span>
+                      <span className="text-center text-xs font-semibold text-[#959cb1]">You</span>
+                      <span className="text-center text-xs font-semibold text-[#959cb1]">Competitor</span>
                     </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-[#959cb1]">Top competitor keywords</span>
-                      <span className="font-semibold text-[#1d2144]">47</span>
+                    <div className="grid grid-cols-3 gap-1 text-sm border-t border-gray-100 pt-1">
+                      <span className="text-[#959cb1]">Service pages</span>
+                      <span className="text-center font-semibold text-[#1d2144]">1</span>
+                      <span className="text-center font-semibold text-primary">14</span>
                     </div>
-                    <div className="flex justify-between text-sm">
+                    <div className="grid grid-cols-3 gap-1 text-sm">
                       <span className="text-[#959cb1]">Google reviews</span>
-                      <span className="font-semibold text-[#1d2144]">12</span>
+                      <span className="text-center font-semibold text-[#1d2144]">12</span>
+                      <span className="text-center font-semibold text-primary">186</span>
                     </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-[#959cb1]">Top competitor reviews</span>
-                      <span className="font-semibold text-[#1d2144]">186</span>
+                    <div className="grid grid-cols-3 gap-1 text-sm">
+                      <span className="text-[#959cb1]">Keywords on page 1</span>
+                      <span className="text-center font-semibold text-[#1d2144]">4</span>
+                      <span className="text-center font-semibold text-primary">47</span>
                     </div>
                   </div>
                   <div className="rounded-md bg-primary/5 px-3 py-2">
