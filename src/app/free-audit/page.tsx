@@ -20,14 +20,12 @@ export default function FreeAuditLanding() {
     setSubmitting(false);
     setSubmitted(true);
 
-    // GA event
     if (typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag("event", "generate_lead", {
         event_category: "landing_page",
         event_label: "free_audit_fb",
       });
     }
-    // Meta Pixel event (fires if pixel is installed)
     if (typeof window !== "undefined" && (window as any).fbq) {
       (window as any).fbq("track", "Lead");
     }
@@ -37,7 +35,6 @@ export default function FreeAuditLanding() {
     document.getElementById("audit-form")?.scrollIntoView({ behavior: "smooth" });
   };
 
-  /* ─── Checkmark icon reusable ─── */
   const Check = () => (
     <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary">
       <svg className="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -46,7 +43,7 @@ export default function FreeAuditLanding() {
     </div>
   );
 
-  /* ═══════════ THANK YOU STATE ═══════════ */
+  /* ═══════════ THANK YOU ═══════════ */
   if (submitted) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-white px-4">
@@ -59,15 +56,15 @@ export default function FreeAuditLanding() {
           <h1 className="mb-4 text-3xl font-bold text-black sm:text-4xl">
             Audit request received
           </h1>
-          <p className="mb-8 text-base text-[#959cb1]">
-            A custom review of your site, Google visibility, and competitor
-            landscape will be sent within 48 hours. No sales pitch — just
-            findings and clear next steps.
+          <p className="mb-3 text-base text-[#959cb1]">
+            Your business will be reviewed manually within the next 48 hours.
           </p>
-          <Link
-            href="/"
-            className="text-primary text-base font-medium hover:underline"
-          >
+          <p className="mb-8 text-sm text-[#959cb1]">
+            You&apos;ll receive a clear report covering visibility, website structure,
+            competitor comparison, and recommended next steps. If it makes sense
+            to discuss further, that option will be included — no pressure.
+          </p>
+          <Link href="/" className="text-primary text-base font-medium hover:underline">
             Visit leadrevs.app →
           </Link>
         </div>
@@ -98,10 +95,9 @@ export default function FreeAuditLanding() {
       <section className="bg-white pb-16 pt-12 sm:pb-20 sm:pt-16">
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex flex-wrap items-center gap-12 lg:flex-nowrap">
-            {/* Text */}
             <div className="w-full lg:w-7/12">
               <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
-                Free audit for local businesses
+                Free audit · Raleigh · Durham · Cary · Apex · Chapel Hill
               </p>
               <h1 className="mb-5 text-[32px] font-bold leading-tight text-[#1d2144] sm:text-[42px]">
                 Find Out What&apos;s Costing
@@ -109,24 +105,23 @@ export default function FreeAuditLanding() {
                 Your Business Calls
               </h1>
               <p className="mb-6 max-w-[520px] text-base text-[#959cb1]">
-                A free visibility and website audit for service businesses in
-                Raleigh, Durham, Cary, Apex, and Chapel Hill. See where competitors
-                are ahead, what&apos;s hurting your lead flow, and what to fix first.
+                A free visibility and website review for local service businesses
+                across the Triangle. See where competitors are ahead, what may be
+                hurting your lead flow, and what to fix first.
               </p>
 
-              {/* Bullets */}
               <ul className="mb-8 space-y-3">
                 <li className="flex items-start gap-3">
                   <Check />
-                  <span className="text-sm text-[#959cb1]">See where competitors are outranking you</span>
+                  <span className="text-sm text-[#959cb1]">See where competitors are showing up ahead of you</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check />
-                  <span className="text-sm text-[#959cb1]">Find website issues that may be costing leads</span>
+                  <span className="text-sm text-[#959cb1]">Find website and profile issues that may be costing leads</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check />
-                  <span className="text-sm text-[#959cb1]">Get clear next steps — not generic advice</span>
+                  <span className="text-sm text-[#959cb1]">Get a prioritized action plan — not vague recommendations</span>
                 </li>
               </ul>
 
@@ -138,11 +133,10 @@ export default function FreeAuditLanding() {
               </button>
 
               <p className="mt-4 text-xs text-[#959cb1]">
-                No cost · No obligation · Results within 48 hours
+                No cost · No obligation · Delivered within 48 hours
               </p>
             </div>
 
-            {/* Image */}
             <div className="w-full lg:w-5/12">
               <Image
                 src="/images/hero/hero-image-01.jpg"
@@ -164,43 +158,25 @@ export default function FreeAuditLanding() {
             <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-primary">
               Sound familiar?
             </p>
-            <h2 className="mb-4 text-2xl font-bold text-[#1d2144] sm:text-[34px] sm:leading-tight">
+            <h2 className="text-2xl font-bold text-[#1d2144] sm:text-[34px] sm:leading-tight">
               What&apos;s costing you calls right now
             </h2>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              {
-                title: "Competitors show up first",
-                desc: "When someone searches for your service nearby, other businesses appear ahead of you — even if your work is better.",
-              },
-              {
-                title: "Website doesn't convert visitors",
-                desc: "People visit the site but leave without calling. No clear service pages, no reviews, no easy way to contact you on mobile.",
-              },
-              {
-                title: "Google Business Profile is weak",
-                desc: "Missing categories, no recent photos, few reviews, stale info. Google uses all of this to decide who shows up in Maps.",
-              },
-              {
-                title: "Ad spend without enough leads",
-                desc: "Money goes to Google Ads or social ads, but there's no tracking to know which clicks turned into real calls or jobs.",
-              },
-              {
-                title: "No idea what's actually working",
-                desc: "Without call tracking or lead source data, it's impossible to know if marketing is producing anything worth the cost.",
-              },
-              {
-                title: "Past marketing burned budget",
-                desc: "A previous agency or freelancer ran campaigns that produced reports but not real leads — and then stopped answering.",
-              },
+              { title: "Competitors show up first", desc: "Other businesses appear ahead of yours when people search nearby — even if your work is better." },
+              { title: "Website doesn't convert", desc: "Visitors land on the site but leave without calling. No clear service pages, no reviews, no easy way to reach you." },
+              { title: "Google profile is weak", desc: "Missing service categories, few recent photos, not enough reviews. Google uses all of this to decide who shows up." },
+              { title: "Ad spend without enough calls", desc: "Budget goes to ads, but without tracking there's no way to know which clicks produced real calls." },
+              { title: "No visibility into what works", desc: "Without call tracking or lead source data, it's unclear which marketing is actually producing jobs." },
+              { title: "Past marketing didn't deliver", desc: "A previous vendor produced reports but not real leads — and eventually stopped communicating." },
             ].map((item) => (
               <div
                 key={item.title}
                 className="rounded-xl border border-primary/10 bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.04)]"
               >
-                <h3 className="mb-2 text-lg font-bold text-[#1d2144]">{item.title}</h3>
+                <h3 className="mb-2 text-base font-bold text-[#1d2144]">{item.title}</h3>
                 <p className="text-sm text-[#959cb1]">{item.desc}</p>
               </div>
             ))}
@@ -219,19 +195,19 @@ export default function FreeAuditLanding() {
               What the free audit covers
             </h2>
             <p className="text-base text-[#959cb1]">
-              A custom review — not a generic PDF. Every audit is done manually
-              for your specific business.
+              Every audit is reviewed manually for your specific business — not
+              auto-generated.
             </p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "Local visibility check", desc: "How your business appears in Google Search and Maps compared to nearby competitors." },
-              { title: "Website structure review", desc: "Missing service pages, mobile issues, slow load times, and unclear calls to action." },
-              { title: "Google Business Profile audit", desc: "Categories, photos, reviews, post activity, and overall profile completeness." },
-              { title: "Competitor comparison", desc: "What nearby competitors rank for, how many reviews they have, and where they're ahead." },
-              { title: "Ad account observations", desc: "If ads are running — wasted spend, targeting gaps, and landing page issues." },
-              { title: "Priority action plan", desc: "A clear list of what to fix first, what can wait, and what the expected impact looks like." },
+              { title: "Local visibility check", desc: "How your business appears in Google Search and Maps vs. nearby competitors." },
+              { title: "Website structure review", desc: "Missing service pages, mobile issues, slow load, and unclear calls to action." },
+              { title: "Google Business Profile", desc: "Categories, photos, reviews, post activity, and profile completeness." },
+              { title: "Competitor comparison", desc: "What competitors rank for, how many reviews they have, and where they're ahead." },
+              { title: "Ad account review", desc: "If ads are running — targeting gaps, wasted spend, and landing page issues." },
+              { title: "Priority action plan", desc: "What to fix first, what can wait, and what the expected impact looks like." },
             ].map((item) => (
               <div
                 key={item.title}
@@ -262,9 +238,9 @@ export default function FreeAuditLanding() {
 
           <div className="grid gap-8 sm:grid-cols-3">
             {[
-              { step: "1", title: "Submit your info", desc: "Tell us your business name and website. Takes 30 seconds." },
-              { step: "2", title: "We review everything", desc: "Google visibility, website structure, competitors, and ads if applicable." },
-              { step: "3", title: "You get clear findings", desc: "A prioritized report with specific issues and practical next steps. No fluff." },
+              { step: "1", title: "Submit your info", desc: "Business name and website. Takes about 30 seconds." },
+              { step: "2", title: "Manual review", desc: "Google visibility, website structure, competitors, and ads if applicable — reviewed by a person, not a tool." },
+              { step: "3", title: "Clear findings sent", desc: "A report with specific issues, a prioritized action plan, and — if relevant — an option to discuss next steps." },
             ].map((item) => (
               <div key={item.step} className="text-center">
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-lg font-bold text-white">
@@ -287,23 +263,23 @@ export default function FreeAuditLanding() {
         </div>
       </section>
 
-      {/* ═══════════ 5. TRUST ═══════════ */}
+      {/* ═══════════ 5. TRUST + PROOF ═══════════ */}
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4">
           <div className="mx-auto mb-12 max-w-[500px] text-center">
             <h2 className="mb-4 text-2xl font-bold text-[#1d2144] sm:text-[34px] sm:leading-tight">
-              Why businesses trust LeadRevs
+              How LeadRevs works with clients
             </h2>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "Based in the Triangle", desc: "Not a remote agency. LeadRevs works with local service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill." },
+              { title: "Based in the Triangle", desc: "LeadRevs works with local service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill." },
               { title: "Direct communication", desc: "No outsourced account managers. No ticket systems. Questions get answered directly." },
               { title: "No long-term contracts", desc: "Month-to-month on everything. Cancel anytime, no penalties." },
-              { title: "Clear monthly reporting", desc: "Every report shows calls tracked, cost per lead, what worked, and what to adjust next." },
-              { title: "Ad spend stays transparent", desc: "Paid directly to Google from your card. Never bundled, never marked up." },
-              { title: "Built for service businesses", desc: "Plumbers, HVAC, electricians, roofers, auto repair, locksmiths, med spas — not SaaS, not e-commerce." },
+              { title: "Clear monthly reporting", desc: "Calls tracked, cost per lead calculated, and specific next steps included every month." },
+              { title: "Transparent ad spend", desc: "Ad budget goes directly to Google from your card. Never bundled, never marked up." },
+              { title: "Manual review, not automated", desc: "Every audit and report is done by a person looking at your specific business — not generated by a tool." },
             ].map((item) => (
               <div
                 key={item.title}
@@ -314,20 +290,79 @@ export default function FreeAuditLanding() {
               </div>
             ))}
           </div>
+
+          {/* Proof-of-method block */}
+          <div className="mt-12 rounded-xl border border-primary/10 bg-[#f8f9ff] p-8 sm:p-10">
+            <div className="flex flex-wrap items-start gap-8 lg:flex-nowrap">
+              <div className="w-full lg:w-1/2">
+                <h3 className="mb-4 text-xl font-bold text-[#1d2144]">
+                  What a typical audit looks like
+                </h3>
+                <p className="mb-4 text-sm text-[#959cb1]">
+                  Each audit is a custom document — not a template. It typically
+                  runs 3–5 pages and covers:
+                </p>
+                <ul className="space-y-2">
+                  {[
+                    "Current Google ranking positions for key services",
+                    "Google Business Profile completeness score and gaps",
+                    "Website structure issues affecting visibility and conversion",
+                    "Side-by-side comparison with 2–3 local competitors",
+                    "Prioritized list of fixes — what to do first and why",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-[#959cb1]">
+                      <span className="mt-0.5 font-bold text-primary">—</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex w-full items-center justify-center lg:w-1/2">
+                <div className="w-full max-w-[380px] rounded-lg border border-gray-200 bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-primary">
+                    Sample audit section
+                  </p>
+                  <h4 className="mb-2 text-base font-bold text-[#1d2144]">
+                    Local Visibility Summary
+                  </h4>
+                  <div className="mb-3 space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-[#959cb1]">Google keywords (page 1)</span>
+                      <span className="font-semibold text-[#1d2144]">4</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-[#959cb1]">Top competitor keywords</span>
+                      <span className="font-semibold text-[#1d2144]">47</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-[#959cb1]">Google reviews</span>
+                      <span className="font-semibold text-[#1d2144]">12</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-[#959cb1]">Top competitor reviews</span>
+                      <span className="font-semibold text-[#1d2144]">186</span>
+                    </div>
+                  </div>
+                  <div className="rounded-md bg-primary/5 px-3 py-2">
+                    <p className="text-xs text-[#959cb1]">
+                      <strong className="text-[#1d2144]">Finding:</strong> Site has 1 service page.
+                      Top competitor has 14. This limits ranking potential for most services offered.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* ═══════════ 6. WHO THIS IS FOR ═══════════ */}
-      <section className="bg-[#f8f9ff] py-16 sm:py-20">
+      <section className="bg-[#f8f9ff] py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4">
-          <div className="mx-auto mb-10 max-w-[500px] text-center">
-            <h2 className="mb-4 text-2xl font-bold text-[#1d2144] sm:text-[34px] sm:leading-tight">
+          <div className="mx-auto mb-8 max-w-[500px] text-center">
+            <h2 className="mb-3 text-2xl font-bold text-[#1d2144] sm:text-[30px]">
               Built for local service businesses
             </h2>
-            <p className="text-base text-[#959cb1]">
-              If the business depends on local customers finding it through
-              Google — this audit is designed for it.
-            </p>
           </div>
 
           <div className="mx-auto flex max-w-[700px] flex-wrap justify-center gap-3">
@@ -356,13 +391,13 @@ export default function FreeAuditLanding() {
 
           <div className="space-y-0 divide-y divide-gray-100">
             {[
-              { q: "Is the audit really free?", a: "Yes. No cost, no credit card, no obligation. The audit is a custom review sent within 48 hours." },
-              { q: "What do I actually get?", a: "A clear report covering your Google visibility, website structure, competitor comparison, and a prioritized list of what to fix first." },
-              { q: "How long does it take?", a: "The form takes about 30 seconds. The audit is typically delivered within 48 hours." },
-              { q: "Do I need to sign a contract?", a: "No. The audit is free. If you decide to work together after, all services are month-to-month." },
-              { q: "Do you work with businesses in my area?", a: "LeadRevs works with local service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill." },
+              { q: "Is the audit really free?", a: "Yes. No cost, no credit card, no obligation. It's a custom review delivered within 48 hours." },
+              { q: "What do I actually get?", a: "A report covering Google visibility, website structure, competitor comparison, and a prioritized list of what to fix first." },
+              { q: "How long does it take?", a: "The form takes 30 seconds. The audit is typically delivered within 48 hours." },
+              { q: "What happens after I get the audit?", a: "You review the findings. If it makes sense to discuss next steps, that option is included. There is no obligation to do anything." },
+              { q: "Do I need to sign a contract?", a: "No. The audit is free. If you decide to work together, all services are month-to-month." },
+              { q: "Do you work with businesses in my area?", a: "LeadRevs works with service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill." },
               { q: "What if I already run Google Ads?", a: "The audit can include an ad account review — targeting gaps, wasted spend, and landing page issues." },
-              { q: "What if I only need help with one thing?", a: "That's fine. The audit will show what matters most. You can act on whatever makes sense for your business." },
             ].map((item) => (
               <details key={item.q} className="group py-5 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-4">
@@ -385,88 +420,62 @@ export default function FreeAuditLanding() {
       <section id="audit-form" className="bg-[#1d2144] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex flex-wrap items-start gap-12 lg:flex-nowrap">
-            {/* Left copy */}
             <div className="w-full lg:w-5/12">
               <h2 className="mb-5 text-2xl font-bold text-white sm:text-[34px] sm:leading-tight">
-                See what&apos;s holding back your local leads
+                See where competitors are ahead — and what to fix first
               </h2>
-              <p className="mb-8 text-base text-gray-400">
-                Submit your info below and receive a custom audit covering your
-                Google visibility, website, competitors, and — if ads are running —
-                where budget may be going to waste. No cost, no obligation.
+              <p className="mb-8 text-sm text-gray-400">
+                Submit your info and receive a custom audit within 48 hours.
+                No cost, no obligation, no sales call unless you want one.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <Check />
-                  <span className="text-sm text-gray-300">Custom review — not a generic PDF</span>
+                  <span className="text-sm text-gray-300">Manual review — not auto-generated</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check />
-                  <span className="text-sm text-gray-300">Clear findings delivered within 48 hours</span>
+                  <span className="text-sm text-gray-300">Findings delivered within 48 hours</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check />
-                  <span className="text-sm text-gray-300">Prioritized action plan you can use independently</span>
+                  <span className="text-sm text-gray-300">Action plan you can use on your own</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check />
-                  <span className="text-sm text-gray-300">No contract, no pressure, no sales pitch</span>
+                  <span className="text-sm text-gray-300">No contract required at any point</span>
                 </li>
               </ul>
             </div>
 
-            {/* Form */}
             <div className="w-full lg:w-7/12">
               <div className="rounded-xl bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.12)] sm:p-10">
-                <h3 className="mb-6 text-xl font-bold text-[#1d2144]">
+                <h3 className="mb-2 text-xl font-bold text-[#1d2144]">
                   Request your free audit
                 </h3>
+                <p className="mb-6 text-sm text-[#959cb1]">
+                  Takes 30 seconds. You&apos;ll hear back within 48 hours with clear findings.
+                </p>
                 <form onSubmit={handleSubmit}>
                   <div className="grid gap-4 sm:grid-cols-2">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Your name"
-                      required
-                      className="w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary"
-                    />
-                    <input
-                      type="text"
-                      name="company"
-                      placeholder="Business name"
-                      required
-                      className="w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary"
-                    />
-                    <input
-                      type="text"
-                      name="website"
-                      placeholder="Website URL (optional)"
-                      className="w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary"
-                    />
-                    <input
-                      type="text"
-                      name="phone"
-                      placeholder="Phone number"
-                      required
-                      className="w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary"
-                    />
+                    <input type="text" name="name" placeholder="Your name" required
+                      className="w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary" />
+                    <input type="text" name="company" placeholder="Business name" required
+                      className="w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary" />
+                    <input type="text" name="website" placeholder="Website URL (optional)"
+                      className="w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary" />
+                    <input type="text" name="phone" placeholder="Phone number" required
+                      className="w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary" />
                   </div>
-                  <textarea
-                    name="message"
-                    rows={3}
-                    placeholder="What's your biggest challenge right now? (optional)"
-                    className="mt-4 w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary resize-none"
-                  ></textarea>
+                  <textarea name="message" rows={3} placeholder="What's your biggest challenge right now? (optional)"
+                    className="mt-4 w-full rounded-lg border border-gray-200 bg-[#f8f9ff] px-4 py-3.5 text-sm text-[#1d2144] placeholder-[#959cb1] outline-none transition focus:border-primary resize-none"></textarea>
                   <input type="hidden" name="_source" value="landing-page-free-audit" />
-                  <button
-                    type="submit"
-                    disabled={submitting}
-                    className="mt-5 w-full rounded-lg bg-primary py-4 text-base font-semibold text-white transition hover:bg-primary/90 disabled:opacity-60"
-                  >
+                  <button type="submit" disabled={submitting}
+                    className="mt-5 w-full rounded-lg bg-primary py-4 text-base font-semibold text-white transition hover:bg-primary/90 disabled:opacity-60">
                     {submitting ? "Sending..." : "Get My Free Audit"}
                   </button>
                   <p className="mt-3 text-center text-xs text-[#959cb1]">
-                    No cost · No obligation · Results within 48 hours
+                    No cost · No obligation · Delivered within 48 hours
                   </p>
                 </form>
               </div>
