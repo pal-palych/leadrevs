@@ -20,12 +20,6 @@ export const footerLinks: FooterLink[] = [
     href: "/service/google-business-profile",
     external: false,
   },
-  {
-    id: uuid(),
-    title: "Contact Us",
-    href: "/contact",
-    external: false,
-  },
 ];
 
 export const footerNewsData: FooterLink[] = [
