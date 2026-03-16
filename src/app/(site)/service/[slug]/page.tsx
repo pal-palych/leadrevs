@@ -9,7 +9,7 @@ type Props = {
 
 const metaDescriptions: Record<string, string> = {
   "website-design":
-    "LeadRevs builds SEO-optimized websites for local service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill. 15+ service pages, mobile-first design, call tracking, and clear monthly reporting.",
+    "Website design for service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill. Built for Google visibility, mobile conversion, call tracking, and clear monthly reporting.",
   "google-ads":
     "Google Ads management for service businesses across the Triangle. Exact match targeting, call tracking, monthly ROI reporting, and no long-term contracts. Month-to-month.",
   "google-business-profile":

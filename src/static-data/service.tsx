@@ -25,7 +25,7 @@ const websiteDetails = (
       </div>
       <div className={trustItem}>
         <span className="mt-0.5 font-bold text-primary">&#10003;</span>
-        Clear monthly reporting
+        Call and lead tracking included
       </div>
       <div className={trustItem}>
         <span className="mt-0.5 font-bold text-primary">&#10003;</span>
@@ -35,18 +35,19 @@ const websiteDetails = (
 
     {/* Problem */}
     <h4 className={h4}>
-      <span className="text-primary">The Problem.</span> Why most service business websites don&apos;t generate calls
+      <span className="text-primary">The Problem.</span> Why many service business websites don&apos;t generate enough calls
     </h4>
     <p className={p}>
-      Most local service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill have a
-      one-page site or an outdated design built on Wix, Tilda, or Squarespace. These sites
-      look fine — but Google can&apos;t index them properly.
+      A simple one-page site can work early on. But as a business grows and adds more
+      services, a single page can&apos;t give Google — or visitors — enough to work with.
+      Without a dedicated page for each service, Google has no clear content to rank, and
+      visitors can&apos;t find the specific information they need to pick up the phone.
     </p>
     <p className={p}>
-      If there&apos;s no dedicated page for each service, Google has nothing to rank.
-      Competitors with 10+ pages show up first — even if their work isn&apos;t as good.
-      Meanwhile, visitors who do land on the site leave because there&apos;s no clear CTA,
-      no reviews, no click-to-call, and no reason to trust the business over anyone else.
+      Competitors with structured sites — separate pages for each service, each city,
+      with reviews, clear CTAs, and mobile-friendly layouts — show up first and convert
+      more visitors into calls. The gap is usually not about quality of work. It&apos;s about
+      how the website is built.
     </p>
 
     {/* What's included */}
@@ -54,16 +55,14 @@ const websiteDetails = (
       <span className="text-primary">01.</span> What&apos;s included
     </h4>
     <ul className="list mb-10 list-inside list-disc">
-      <li className={li}><span className={span}>15+ pages — one for each service offered</span></li>
-      <li className={li}><span className={span}>Dedicated location pages for each city served</span></li>
-      <li className={li}><span className={span}>Mobile-first design with click-to-call buttons on every page</span></li>
-      <li className={li}><span className={span}>SEO-optimized page titles, headings, and content structure</span></li>
-      <li className={li}><span className={span}>Google reviews displayed on service pages</span></li>
-      <li className={li}><span className={span}>Before/after project photos with professional presentation</span></li>
+      <li className={li}><span className={span}>Service pages built around what customers actually search for</span></li>
+      <li className={li}><span className={span}>Location pages for each city served across the Triangle</span></li>
+      <li className={li}><span className={span}>Mobile-first layout with clear click-to-call paths on every page</span></li>
+      <li className={li}><span className={span}>SEO-friendly page structure — titles, headings, and internal links</span></li>
+      <li className={li}><span className={span}>Reviews and trust signals placed where they help conversion</span></li>
+      <li className={li}><span className={span}>Photo and proof sections that make the business feel established</span></li>
       <li className={li}><span className={span}>Contact form and phone number visible on every page</span></li>
-      <li className={li}><span className={span}>FAQ section on key service pages</span></li>
-      <li className={li}><span className={span}>Call tracking and form submission tracking setup</span></li>
-      <li className={li}><span className={span}>Fast-loading, accessibility-friendly build</span></li>
+      <li className={li}><span className={span}>Call tracking and form tracking set up before launch</span></li>
     </ul>
 
     {/* Why it works */}
@@ -71,10 +70,11 @@ const websiteDetails = (
       <span className="text-primary">02.</span> Why this works
     </h4>
     <p className={p}>
-      A properly structured website does two things: it helps Google understand what the
-      business does and where it operates, and it helps visitors convert into calls faster.
-      Every page targets a specific service and location — which means more rankings, more
-      traffic, and more calls from people who are actively searching.
+      A well-structured website does two things. First, it helps Google understand what
+      the business does and where it operates — which means more visibility across multiple
+      services and cities. Second, it helps visitors convert. When someone lands on a clear
+      service page with reviews, photos, pricing context, and an obvious way to call — they
+      call. The site works for both search visibility and lead conversion at the same time.
     </p>
 
     {/* Who it's for */}
@@ -82,14 +82,15 @@ const websiteDetails = (
       <span className="text-primary">03.</span> Good fit / not the best fit
     </h4>
     <p className={p}>
-      <strong className="text-black">Good fit:</strong> Service businesses with an outdated site,
-      a one-page site, a site on Wix/Tilda/Squarespace that isn&apos;t ranking, or no site at all.
-      Businesses that offer multiple services across multiple cities in the Triangle.
+      <strong className="text-black">Good fit:</strong> Service businesses in Raleigh, Durham,
+      Cary, Apex, or Chapel Hill with an outdated or limited site that doesn&apos;t reflect
+      the full range of services offered. Businesses that want better Google visibility and
+      more calls from their website — not just a fresh look.
     </p>
     <p className={p}>
       <strong className="text-black">Not the best fit:</strong> Businesses that already have a
-      strong, well-structured WordPress site with good SEO foundations. In that case, targeted
-      improvements or Google Ads may be a better starting point.
+      strong, well-structured site with good search visibility. In that case, targeted
+      improvements, Google Ads, or local SEO may be a better starting point.
     </p>
 
     {/* Process */}
@@ -98,44 +99,56 @@ const websiteDetails = (
     </h4>
     <ul className="list mb-10 list-inside list-disc">
       <li className={li}><span className={span}><strong>Step 1:</strong> Free audit of the current site, Google visibility, and competitor landscape</span></li>
-      <li className={li}><span className={span}><strong>Step 2:</strong> Site architecture plan — pages, content structure, tracking setup</span></li>
-      <li className={li}><span className={span}><strong>Step 3:</strong> Build, launch, and connect to Google Analytics and call tracking</span></li>
+      <li className={li}><span className={span}><strong>Step 2:</strong> Site plan — page structure, content priorities, tracking setup</span></li>
+      <li className={li}><span className={span}><strong>Step 3:</strong> Build, launch, and verify that tracking and analytics are live</span></li>
     </ul>
+
+    {/* After launch */}
+    <h4 className={h4}>
+      <span className="text-primary">05.</span> After launch
+    </h4>
+    <p className={p}>
+      The site doesn&apos;t end at launch. Call tracking and form tracking are active from
+      day one, so results are measurable immediately. If ongoing lead generation is added
+      (Google Ads, local SEO), monthly reporting covers both site performance and campaign
+      results — with clear numbers, not vague summaries.
+    </p>
 
     {/* FAQ */}
     <h4 className={h4}>
-      <span className="text-primary">05.</span> Common questions
+      <span className="text-primary">06.</span> Common questions
     </h4>
 
     <h5 className={faqQ}>How long does the build take?</h5>
-    <p className={faqA}>Most sites are completed within 3–4 weeks, depending on the number of service and location pages.</p>
+    <p className={faqA}>Most sites are completed within 3–4 weeks, depending on the number of service and location pages needed.</p>
 
     <h5 className={faqQ}>How many pages will the site have?</h5>
-    <p className={faqA}>Typically 15–25 pages. One page for each service, one for each key city, plus home, about, contact, and FAQ.</p>
+    <p className={faqA}>Typically 15–25 pages — one for each service, key cities served, plus home, about, contact, and FAQ. The exact count depends on the business.</p>
 
     <h5 className={faqQ}>Who writes the content?</h5>
-    <p className={faqA}>LeadRevs handles the copy. Content is based on real service descriptions, competitive research, and SEO keyword data.</p>
+    <p className={faqA}>LeadRevs handles the copy. Content is based on real service descriptions, local search data, and competitive research — not filler text.</p>
 
     <h5 className={faqQ}>Is this a redesign or a full rebuild?</h5>
-    <p className={faqA}>It depends on the current site. If the existing platform is limiting performance, a full rebuild on WordPress is recommended. If the site is already on WordPress, a restructure and content overhaul may be enough.</p>
+    <p className={faqA}>It depends on the current site. If the existing platform is limiting visibility or conversion, a full rebuild is usually the better path. If the site already has decent structure, a targeted restructure and content overhaul may be enough.</p>
 
-    <h5 className={faqQ}>Will SEO be included?</h5>
-    <p className={faqA}>Yes. Every page is built with SEO-optimized titles, headings, internal links, and schema. The site is structured to rank.</p>
+    <h5 className={faqQ}>Is SEO built in?</h5>
+    <p className={faqA}>Yes. Every page is structured for search — titles, headings, internal links, and local signals. The goal is a site that can rank, not just a site that looks good.</p>
 
-    <h5 className={faqQ}>Will tracking be set up?</h5>
-    <p className={faqA}>Yes. Google Analytics, call tracking, and form submission tracking are included in every build.</p>
+    <h5 className={faqQ}>Will calls and form submissions be tracked?</h5>
+    <p className={faqA}>Yes. Call tracking and form submission tracking are set up before launch so results are measurable from day one.</p>
 
     {/* CTA */}
     <div className="mt-10 rounded-xl bg-primary/5 p-8">
-      <h4 className="mb-3 text-xl font-bold text-black">Get a free website audit</h4>
+      <h4 className="mb-3 text-xl font-bold text-black">See what your site is missing</h4>
       <p className="mb-5 text-base text-body-color">
-        Find out what&apos;s holding the current site back — and what a stronger site could do for calls and visibility.
+        A free review of the current site — covering structure, search visibility, mobile
+        experience, and conversion gaps. No cost, no obligation.
       </p>
       <Link
         href="/contact"
         className="bg-primary hover:bg-primary/90 inline-block rounded-lg px-8 py-3 text-base font-semibold text-white transition"
       >
-        Request Free Audit
+        Request a Free Website Review
       </Link>
     </div>
   </div>
@@ -406,9 +419,9 @@ const gbpDetails = (
 export const serviceData: Service[] = [
   {
     id: uuid(),
-    title: "Website That Actually Ranks",
+    title: "Websites Built to Generate Calls",
     description:
-      "A structured, SEO-optimized website built for local service businesses across the Triangle — designed to rank on Google and convert visitors into calls.",
+      "Website design for local service businesses across the Triangle — structured for Google visibility, mobile conversion, and tracked results.",
     slug: "website-design",
     image: "/images/services/service-01.jpg",
     details: websiteDetails,
