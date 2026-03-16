@@ -319,8 +319,11 @@ export default function FreeAuditLanding() {
               </div>
               <div className="flex w-full items-center justify-center lg:w-1/2">
                 <div className="w-full max-w-[380px] rounded-lg border border-gray-200 bg-white p-6 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-primary">
-                    Sample audit section
+                  <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-primary">
+                    Example Audit Snapshot
+                  </p>
+                  <p className="mb-3 text-[11px] text-[#959cb1]">
+                    Illustrative example — each audit reflects your specific business and local competitors
                   </p>
                   <h4 className="mb-2 text-base font-bold text-[#1d2144]">
                     Local Visibility Summary
@@ -346,7 +349,14 @@ export default function FreeAuditLanding() {
                   <div className="rounded-md bg-primary/5 px-3 py-2">
                     <p className="text-xs text-[#959cb1]">
                       <strong className="text-[#1d2144]">Finding:</strong> Site has 1 service page.
-                      Top competitor has 14. This limits ranking potential for most services offered.
+                      A top local competitor has 14. This makes it harder to rank for individual
+                      services and limits inbound calls from Google.
+                    </p>
+                  </div>
+                  <div className="mt-2 rounded-md border border-primary/10 px-3 py-1.5">
+                    <p className="text-xs text-[#959cb1]">
+                      <strong className="text-[#1d2144]">Priority fix:</strong> Build dedicated
+                      pages for the highest-value services first.
                     </p>
                   </div>
                 </div>
