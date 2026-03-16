@@ -13,7 +13,7 @@ const metaDescriptions: Record<string, string> = {
   "google-ads":
     "Google Ads management for service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill. Focused on qualified calls, tracked leads, clear monthly reporting, and no long-term contracts.",
   "google-business-profile":
-    "Google Business Profile optimization and local SEO for service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill. Map Pack visibility, review strategy, and monthly reporting.",
+    "Google Business Profile optimization and local SEO for service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill. Stronger reviews, better local visibility, monthly reporting, and more calls from Google.",
 };
 
 export async function generateMetadata(props: Props) {

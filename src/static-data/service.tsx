@@ -311,18 +311,19 @@ const gbpDetails = (
 
     {/* Problem */}
     <h4 className={h4}>
-      <span className="text-primary">The Problem.</span> Why local customers can&apos;t find the business
+      <span className="text-primary">The Problem.</span> Why local customers aren&apos;t finding the business
     </h4>
     <p className={p}>
-      When someone in Raleigh, Durham, Cary, Apex, or Chapel Hill searches for a service —
-      plumber, HVAC repair, auto mechanic — Google shows a Map Pack with three businesses.
-      Getting into that Map Pack depends on the strength of the Google Business Profile:
-      categories, reviews, photos, activity, and consistency across directories.
+      When someone in Raleigh, Durham, Cary, Apex, or Chapel Hill searches for a local
+      service — plumber, HVAC repair, auto mechanic — Google shows a short list of nearby
+      businesses. Whether a business appears in that list depends heavily on how complete,
+      active, and trusted its Google Business Profile is.
     </p>
     <p className={p}>
-      Most local businesses have an incomplete or stale profile. Missing service categories,
-      no recent photos, no review strategy, and inconsistent business info across the web.
-      These are fixable problems that directly affect visibility.
+      Many local businesses have profiles that are missing key service categories, have no
+      recent photos, haven&apos;t been updated in months, and have inconsistent business
+      information across the web. These are straightforward problems — and fixing them can
+      directly improve how often the business shows up in local results.
     </p>
 
     {/* What's included */}
@@ -330,25 +331,26 @@ const gbpDetails = (
       <span className="text-primary">01.</span> What&apos;s included
     </h4>
     <ul className="list mb-10 list-inside list-disc">
-      <li className={li}><span className={span}>Full Google Business Profile audit and optimization</span></li>
-      <li className={li}><span className={span}>Service category setup matched to actual offerings</span></li>
-      <li className={li}><span className={span}>Photo and content recommendations</span></li>
-      <li className={li}><span className={span}>Review generation strategy — automated requests through existing CRM</span></li>
-      <li className={li}><span className={span}>Weekly profile posts to keep the listing active</span></li>
-      <li className={li}><span className={span}>Citation consistency audit across 50+ directories</span></li>
-      <li className={li}><span className={span}>Local on-page SEO guidance for the website</span></li>
-      <li className={li}><span className={span}>Monthly reporting on profile views, calls, and direction requests</span></li>
+      <li className={li}><span className={span}>Full Google Business Profile audit — categories, services, description, and completeness</span></li>
+      <li className={li}><span className={span}>Profile optimization to better reflect the business and its service area</span></li>
+      <li className={li}><span className={span}>Review request support — helping generate more recent customer feedback through existing tools</span></li>
+      <li className={li}><span className={span}>Photo and content recommendations to keep the profile active and credible</span></li>
+      <li className={li}><span className={span}>Business information consistency check across important directories</span></li>
+      <li className={li}><span className={span}>Local SEO guidance for the website — service pages, location relevance, trust signals</span></li>
+      <li className={li}><span className={span}>Monthly reporting on profile views, calls from Google, and direction requests</span></li>
     </ul>
 
     {/* Why it works */}
     <h4 className={h4}>
-      <span className="text-primary">02.</span> Why this works
+      <span className="text-primary">02.</span> Why this matters
     </h4>
     <p className={p}>
-      The Google Business Profile is where many local customers make their decision — before
-      they ever visit the website. A strong profile with fresh reviews, complete service info,
-      and recent photos builds trust before the click. Combined with consistent local citations
-      and on-page signals, it strengthens visibility in Maps and local organic results.
+      For many local customers, the Google Business Profile is where the decision happens —
+      before they ever visit a website. A complete profile with recent reviews, clear service
+      information, and fresh photos makes the business easier to trust and more likely to
+      get the call. When the profile is backed by consistent business information across the
+      web and stronger local signals on the website, visibility in local results improves
+      over time.
     </p>
 
     {/* Who it's for */}
@@ -356,15 +358,15 @@ const gbpDetails = (
       <span className="text-primary">03.</span> Good fit / not the best fit
     </h4>
     <p className={p}>
-      <strong className="text-black">Good fit:</strong> Service businesses that depend on local
-      customers finding them through Google — especially those with a physical location or
-      defined service area in the Triangle. Businesses with fewer than 50 Google reviews or
-      an inactive profile.
+      <strong className="text-black">Good fit:</strong> Service businesses in Raleigh, Durham,
+      Cary, Apex, or Chapel Hill that depend on local customers finding them through Google.
+      Especially useful for businesses with an inactive profile, few recent reviews, or
+      inconsistent business information online.
     </p>
     <p className={p}>
       <strong className="text-black">Not the best fit:</strong> Online-only businesses or
-      businesses that don&apos;t serve a specific local area. For those, paid search or content
-      marketing may be a better starting point.
+      businesses that don&apos;t serve a specific local area. For those, paid search or a
+      website-first approach may be more effective.
     </p>
 
     {/* Process */}
@@ -372,9 +374,9 @@ const gbpDetails = (
       <span className="text-primary">04.</span> How it works
     </h4>
     <ul className="list mb-10 list-inside list-disc">
-      <li className={li}><span className={span}><strong>Step 1:</strong> Free audit of the current Google Business Profile, reviews, and local citations</span></li>
-      <li className={li}><span className={span}><strong>Step 2:</strong> Optimization — categories, services, photos, posts, and citation cleanup</span></li>
-      <li className={li}><span className={span}><strong>Step 3:</strong> Ongoing management, review strategy, and monthly performance reporting</span></li>
+      <li className={li}><span className={span}><strong>Step 1:</strong> Free audit of the Google Business Profile, reviews, and local presence</span></li>
+      <li className={li}><span className={span}><strong>Step 2:</strong> Profile cleanup and optimization — categories, services, photos, and consistency fixes</span></li>
+      <li className={li}><span className={span}><strong>Step 3:</strong> Ongoing support — review generation, profile updates, and monthly reporting on visibility and calls</span></li>
     </ul>
 
     {/* FAQ */}
@@ -382,32 +384,36 @@ const gbpDetails = (
       <span className="text-primary">05.</span> Common questions
     </h4>
 
-    <h5 className={faqQ}>How long before results show?</h5>
-    <p className={faqA}>Profile improvements can affect visibility within 2–4 weeks. Review growth and citation consistency typically show measurable impact within 60–90 days.</p>
+    <h5 className={faqQ}>How long before visibility improves?</h5>
+    <p className={faqA}>Profile improvements can begin affecting local visibility within 2–4 weeks. Review growth and consistency improvements typically show measurable progress within 60–90 days.</p>
 
-    <h5 className={faqQ}>Can you help get more Google reviews?</h5>
-    <p className={faqA}>Yes. LeadRevs sets up automated review requests through the existing CRM or scheduling tool — so customers are asked to review right after the job is done.</p>
+    <h5 className={faqQ}>Can LeadRevs help get more Google reviews?</h5>
+    <p className={faqA}>Yes. LeadRevs helps set up review request workflows through the existing CRM or scheduling tool — so satisfied customers are asked for feedback shortly after the job is done.</p>
 
-    <h5 className={faqQ}>What&apos;s the difference between GBP and website SEO?</h5>
-    <p className={faqA}>The Google Business Profile controls visibility in the Map Pack. Website SEO controls visibility in organic search results below the map. Both matter — but GBP is often the faster win for local businesses.</p>
+    <h5 className={faqQ}>What&apos;s the difference between profile optimization and website SEO?</h5>
+    <p className={faqA}>The Google Business Profile affects visibility in the map results that appear at the top of local searches. Website SEO affects the organic results below the map. Both contribute to local visibility — but profile optimization is often the faster starting point.</p>
 
-    <h5 className={faqQ}>Do you create city/service area pages?</h5>
-    <p className={faqA}>That falls under the website build service. Local on-page SEO guidance is included with GBP optimization, and city pages can be added as part of a website project.</p>
+    <h5 className={faqQ}>Are city or service-area pages included?</h5>
+    <p className={faqA}>Location-specific pages fall under the website build service. Local on-page guidance is included with profile optimization, and city pages can be added as part of a website project.</p>
 
-    <h5 className={faqQ}>Can Local SEO and Google Ads work together?</h5>
-    <p className={faqA}>Yes. Strong local visibility builds trust and organic traffic over time, while Google Ads generates calls immediately. Most businesses benefit from running both.</p>
+    <h5 className={faqQ}>Does this work alongside Google Ads?</h5>
+    <p className={faqA}>Yes. Local SEO builds visibility and trust over time. Google Ads generates calls more immediately. Running both creates a stronger overall presence in local search.</p>
+
+    <h5 className={faqQ}>What does the monthly report include?</h5>
+    <p className={faqA}>Each report covers profile views, calls from Google, direction requests, review activity, and practical recommendations for the next month.</p>
 
     {/* CTA */}
     <div className="mt-10 rounded-xl bg-primary/5 p-8">
-      <h4 className="mb-3 text-xl font-bold text-black">Get a free local SEO audit</h4>
+      <h4 className="mb-3 text-xl font-bold text-black">See how the business appears in local search</h4>
       <p className="mb-5 text-base text-body-color">
-        Find out how the business appears in local search — and what&apos;s needed to improve Map Pack visibility.
+        A free review of the Google Business Profile, review presence, and local visibility —
+        with clear findings and practical next steps. No cost, no obligation.
       </p>
       <Link
         href="/contact"
         className="bg-primary hover:bg-primary/90 inline-block rounded-lg px-8 py-3 text-base font-semibold text-white transition"
       >
-        Request Free Audit
+        Request a Free Local Visibility Review
       </Link>
     </div>
   </div>
@@ -438,9 +444,9 @@ export const serviceData: Service[] = [
   },
   {
     id: uuid(),
-    title: "Google Business Profile & Local SEO",
+    title: "Stronger Local Visibility on Google",
     description:
-      "Google Business Profile optimization and local SEO for service businesses across the Triangle — built to improve Map Pack visibility and generate more local calls.",
+      "Google Business Profile optimization and local SEO for service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill — stronger reviews, better visibility, more calls from local search.",
     slug: "google-business-profile",
     image: "/images/services/service-03.jpg",
     details: gbpDetails,
