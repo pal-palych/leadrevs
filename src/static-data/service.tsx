@@ -164,11 +164,11 @@ const googleAdsDetails = (
     <div className="mb-10 flex flex-wrap gap-x-6 gap-y-3 border-b border-stroke/30 pb-8">
       <div className={trustItem}>
         <span className="mt-0.5 font-bold text-primary">&#10003;</span>
-        Month-to-month
+        Month-to-month — cancel anytime
       </div>
       <div className={trustItem}>
         <span className="mt-0.5 font-bold text-primary">&#10003;</span>
-        Call and lead tracking
+        Every call and lead tracked
       </div>
       <div className={trustItem}>
         <span className="mt-0.5 font-bold text-primary">&#10003;</span>
@@ -178,19 +178,19 @@ const googleAdsDetails = (
 
     {/* Problem */}
     <h4 className={h4}>
-      <span className="text-primary">The Problem.</span> Why most local businesses waste money on Google Ads
+      <span className="text-primary">The Problem.</span> Why Google Ads often wastes money for local businesses
     </h4>
     <p className={p}>
-      Many service businesses across the Triangle have tried Google Ads — and stopped because
-      the results didn&apos;t justify the spend. The usual causes: broad match keywords that
-      attract irrelevant clicks, no negative keyword lists, traffic sent to the homepage
-      instead of a service-specific landing page, and no tracking to measure what actually
-      converted.
+      Many service businesses across the Triangle have tried Google Ads and stopped — not
+      because ads don&apos;t work, but because the campaigns were set up poorly. Loose
+      targeting that attracts irrelevant clicks. Traffic sent to the homepage instead of a
+      page about the actual service. No way to tell which calls came from ads and which
+      came from somewhere else.
     </p>
     <p className={p}>
-      The problem is almost never Google Ads itself. It&apos;s how the campaigns were set up.
-      Tighter targeting, proper landing pages, and call tracking can turn the same budget into
-      a reliable source of qualified calls.
+      The result is a budget that gets spent without a clear picture of what it produced.
+      With tighter targeting, service-specific landing pages, and proper call tracking,
+      the same budget can produce materially better results.
     </p>
 
     {/* What's included */}
@@ -198,16 +198,15 @@ const googleAdsDetails = (
       <span className="text-primary">01.</span> What&apos;s included
     </h4>
     <ul className="list mb-10 list-inside list-disc">
-      <li className={li}><span className={span}>Keyword research focused on high-intent, high-margin services</span></li>
-      <li className={li}><span className={span}>Exact match and phrase match targeting — no broad match waste</span></li>
-      <li className={li}><span className={span}>Negative keyword lists to block irrelevant searches</span></li>
-      <li className={li}><span className={span}>Location targeting for Raleigh, Durham, Cary, Apex, and Chapel Hill</span></li>
-      <li className={li}><span className={span}>Ad copy written for local service intent</span></li>
-      <li className={li}><span className={span}>Landing page recommendations for each campaign</span></li>
-      <li className={li}><span className={span}>Call tracking setup — every call tied to the ad that produced it</span></li>
-      <li className={li}><span className={span}>Conversion tracking — forms, calls, and click-to-call</span></li>
-      <li className={li}><span className={span}>Monthly reporting with cost per lead, call volume, and ROI</span></li>
-      <li className={li}><span className={span}>Ongoing optimization — bids, keywords, ad copy, and budget allocation</span></li>
+      <li className={li}><span className={span}>Campaign targeting focused on people actively searching for local services</span></li>
+      <li className={li}><span className={span}>Targeting limited to Raleigh, Durham, Cary, Apex, and Chapel Hill</span></li>
+      <li className={li}><span className={span}>Filters to reduce irrelevant clicks and low-intent searches</span></li>
+      <li className={li}><span className={span}>Ad copy written around the services most likely to produce qualified calls</span></li>
+      <li className={li}><span className={span}>Landing page recommendations — so visitors reach a relevant page, not the homepage</span></li>
+      <li className={li}><span className={span}>Call tracking — every call tied to the campaign and keyword that generated it</span></li>
+      <li className={li}><span className={span}>Form and click-to-call conversion tracking</span></li>
+      <li className={li}><span className={span}>Monthly reporting with cost per lead, call volume, and clear next steps</span></li>
+      <li className={li}><span className={span}>Ongoing adjustments — targeting, budget allocation, and ad copy refined based on real data</span></li>
     </ul>
 
     {/* Why it works */}
@@ -215,10 +214,11 @@ const googleAdsDetails = (
       <span className="text-primary">02.</span> Why this works
     </h4>
     <p className={p}>
-      Google Ads targets people who are actively searching for a specific service right now.
-      When the targeting is tight, the landing page is relevant, and every call is tracked —
-      one booked job from Google Ads can cover the entire monthly budget. The key is
-      discipline: exact keywords, proper exclusions, and clear reporting every month.
+      Google Ads puts the business in front of people who are actively searching for a
+      specific service right now. When the targeting is focused on high-intent local
+      searches, the landing page matches the search, and every call is tracked — the gap
+      between ad spend and booked jobs gets much smaller. The goal is not more clicks.
+      The goal is more qualified calls and better visibility into what is working.
     </p>
 
     {/* Who it's for */}
@@ -226,15 +226,15 @@ const googleAdsDetails = (
       <span className="text-primary">03.</span> Good fit / not the best fit
     </h4>
     <p className={p}>
-      <strong className="text-black">Good fit:</strong> Service businesses that want more calls
-      fast and have at least $800–$1,500/month for ad spend. Businesses with high-ticket services
-      (bathroom remodels, engine replacements, water heater installs, re-pipes) where one job
-      can cover the ad budget.
+      <strong className="text-black">Good fit:</strong> Local service businesses that want more
+      inbound calls and have $800–$1,500/month available for ad spend. Especially strong for
+      businesses with higher-value services — where one qualified lead can meaningfully change
+      the return on ad spend.
     </p>
     <p className={p}>
-      <strong className="text-black">Not the best fit:</strong> Businesses with no website or a
-      site that can&apos;t handle ad traffic. In that case, a website build or improvement should
-      come first — otherwise ad spend gets wasted on a page that doesn&apos;t convert.
+      <strong className="text-black">Not the best fit:</strong> Businesses without a website or
+      with a site that isn&apos;t ready to receive ad traffic. In that case, a website build
+      or improvement should come first — running ads to a weak page wastes budget.
     </p>
 
     {/* Process */}
@@ -242,9 +242,9 @@ const googleAdsDetails = (
       <span className="text-primary">04.</span> How it works
     </h4>
     <ul className="list mb-10 list-inside list-disc">
-      <li className={li}><span className={span}><strong>Step 1:</strong> Free audit of the current ad account (or competitor landscape if starting fresh)</span></li>
-      <li className={li}><span className={span}><strong>Step 2:</strong> Campaign setup — keywords, ads, landing pages, tracking</span></li>
-      <li className={li}><span className={span}><strong>Step 3:</strong> Monthly management, reporting, and optimization</span></li>
+      <li className={li}><span className={span}><strong>Step 1:</strong> Free audit of the current ad account — or competitor and keyword research if starting fresh</span></li>
+      <li className={li}><span className={span}><strong>Step 2:</strong> Campaign setup — targeting, ad copy, landing pages, and tracking</span></li>
+      <li className={li}><span className={span}><strong>Step 3:</strong> Monthly management — reporting on calls, cost per lead, and adjustments based on data</span></li>
     </ul>
 
     {/* FAQ */}
@@ -252,35 +252,36 @@ const googleAdsDetails = (
       <span className="text-primary">05.</span> Common questions
     </h4>
 
-    <h5 className={faqQ}>How much ad budget is needed?</h5>
-    <p className={faqA}>Most local service campaigns start between $800–$1,500/month. The ad budget is billed directly to the business through Google — it&apos;s never bundled or marked up.</p>
+    <h5 className={faqQ}>How much ad budget is recommended?</h5>
+    <p className={faqA}>Most local service campaigns start between $800–$1,500/month in ad spend. This is billed directly to the business through Google — never bundled or marked up by LeadRevs.</p>
 
-    <h5 className={faqQ}>How fast do results come?</h5>
-    <p className={faqA}>Campaigns can start generating calls within the first week. Optimization improves results over the first 30–60 days as data builds.</p>
+    <h5 className={faqQ}>How quickly can campaigns start producing calls?</h5>
+    <p className={faqA}>Ads can begin generating calls within the first week of launch. Performance improves over the first 30–60 days as data builds and targeting is refined.</p>
 
-    <h5 className={faqQ}>Do you build landing pages?</h5>
-    <p className={faqA}>Landing page recommendations are included. If the current site needs a dedicated landing page, that can be added as part of a website build or as a standalone page.</p>
+    <h5 className={faqQ}>Are landing pages included?</h5>
+    <p className={faqA}>Landing page recommendations are included with every campaign. If the current site doesn&apos;t have a suitable page, one can be built as part of a website project or as a standalone addition.</p>
 
-    <h5 className={faqQ}>How is performance tracked?</h5>
-    <p className={faqA}>Every campaign includes call tracking and conversion tracking. Monthly reports show exactly which keywords, ads, and campaigns drove real calls and form submissions.</p>
+    <h5 className={faqQ}>How is performance reported?</h5>
+    <p className={faqA}>Every month includes a clear report showing calls tracked, form submissions, cost per lead, which campaigns performed best, and specific recommendations for the next month.</p>
 
-    <h5 className={faqQ}>Can you take over an existing Google Ads account?</h5>
-    <p className={faqA}>Yes. LeadRevs can audit an existing account, identify waste, and restructure it — or build a new one from scratch.</p>
+    <h5 className={faqQ}>Can LeadRevs take over an existing Google Ads account?</h5>
+    <p className={faqA}>Yes. An existing account can be audited, restructured, and improved — or a new account can be built from scratch if that makes more sense.</p>
 
     <h5 className={faqQ}>Is there a contract?</h5>
     <p className={faqA}>No. Management is month-to-month. Cancel anytime — no penalties, no notice period.</p>
 
     {/* CTA */}
     <div className="mt-10 rounded-xl bg-primary/5 p-8">
-      <h4 className="mb-3 text-xl font-bold text-black">Get a free Google Ads audit</h4>
+      <h4 className="mb-3 text-xl font-bold text-black">Find out what your ads are missing</h4>
       <p className="mb-5 text-base text-body-color">
-        Find out where the current budget is being wasted — or get a recommendation for starting from scratch.
+        A free review of the current ad account — or, if starting fresh, a recommendation
+        on targeting, budget, and expected lead volume. No cost, no obligation.
       </p>
       <Link
         href="/contact"
         className="bg-primary hover:bg-primary/90 inline-block rounded-lg px-8 py-3 text-base font-semibold text-white transition"
       >
-        Request Free Audit
+        Request a Free Google Ads Review
       </Link>
     </div>
   </div>
@@ -428,9 +429,9 @@ export const serviceData: Service[] = [
   },
   {
     id: uuid(),
-    title: "Google Ads That Pay For Themselves",
+    title: "Google Ads Built for Better Leads",
     description:
-      "Targeted Google Ads campaigns for service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill — with call tracking, clear reporting, and no wasted spend.",
+      "Google Ads management for service businesses across the Triangle — focused on qualified calls, tighter targeting, tracked results, and clear monthly reporting.",
     slug: "google-ads",
     image: "/images/services/service-02.jpg",
     details: googleAdsDetails,
