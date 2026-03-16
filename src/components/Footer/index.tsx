@@ -28,16 +28,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 md:w-1/2 lg:w-2/12">
-            <div className="mb-10">
-              <h3 className="mb-9 text-xl font-semibold text-white">Industries</h3>
-              <ul className="space-y-3">
-                {footerNewsData.map((linkItem) => (
-                  <FooterLinkItem key={linkItem?.id} linkItem={linkItem} />
-                ))}
-              </ul>
-            </div>
-          </div>
+          {/* Industries column hidden until industry pages exist */}
           <div className="w-full px-4 md:w-1/2 lg:w-3/12">
             <div className="mb-10">
               <h3 className="mb-9 text-xl font-semibold text-white">
