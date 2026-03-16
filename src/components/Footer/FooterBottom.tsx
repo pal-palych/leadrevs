@@ -19,7 +19,7 @@ export default function FooterBottom() {
           ))}
         </div>
         <p className="text-center text-base font-medium text-body-color">
-        LeadRevs - Digital Marketing for Local Businesses &copy; {new Date().getFullYear()}
+        &copy; {new Date().getFullYear()} LeadRevs — Marketing for service businesses across the Triangle
         </p>
       </div>
     </>

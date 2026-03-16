@@ -9,9 +9,9 @@ export default function About() {
     >
       <div className="container">
         <SectionTitle
-          mainTitle="WHAT I HELP YOU FIX"
-          title="What local businesses usually need first"
-          width="600px"
+          mainTitle="WHAT GETS IN THE WAY"
+          title="Good businesses lose leads every day because of fixable problems"
+          width="700px"
           marginBottom="50px"
         />
 
@@ -19,12 +19,13 @@ export default function About() {
           <div className="w-full px-4 md:w-1/2">
             <div className="mb-8 rounded-xl border border-primary/20 bg-white p-8 shadow-service">
               <h3 className="mb-3 text-xl font-bold text-dark">
-                Your business is hard to find on Google
+                Hard to find on Google
               </h3>
               <p className="text-base text-body-color">
-                I build service pages and local pages so Google can actually rank you.
-                If you offer 15 services but have a one-page site, Google can only
-                show you for one thing. Your competitors with 10+ pages win every time.
+                Most service businesses have a one-page site or an outdated design
+                that Google can&apos;t index properly. If there&apos;s no dedicated page for
+                each service, Google has nothing to rank. Competitors with 10+ pages
+                show up first — even if their work isn&apos;t as good.
               </p>
             </div>
           </div>
@@ -32,12 +33,13 @@ export default function About() {
           <div className="w-full px-4 md:w-1/2">
             <div className="mb-8 rounded-xl border border-primary/20 bg-white p-8 shadow-service">
               <h3 className="mb-3 text-xl font-bold text-dark">
-                Your ad budget gets wasted on bad clicks
+                Ad budget burned on bad clicks
               </h3>
               <p className="text-base text-body-color">
-                I set up tighter campaigns around the services that actually make you
-                money. Exact match keywords only — so you pay for &ldquo;water heater
-                repair Raleigh,&rdquo; not random searches that never convert.
+                Broad match keywords, no negative keyword lists, and sending traffic
+                to the homepage instead of a landing page — these are the most common
+                ways ad budgets get wasted. Tighter targeting and proper campaign
+                structure fix this fast.
               </p>
             </div>
           </div>
@@ -45,12 +47,13 @@ export default function About() {
           <div className="w-full px-4 md:w-1/2">
             <div className="mb-8 rounded-xl border border-primary/20 bg-white p-8 shadow-service">
               <h3 className="mb-3 text-xl font-bold text-dark">
-                Your site doesn&apos;t convert visitors into calls
+                Website doesn&apos;t convert
               </h3>
               <p className="text-base text-body-color">
-                I improve the structure, speed, trust elements, and service messaging
-                so more visitors turn into calls. Reviews on every page, click-to-call
-                buttons, before/after photos, and clear pricing signals.
+                Getting traffic is only half the problem. If the site loads slowly,
+                doesn&apos;t have reviews, click-to-call buttons, or clear service
+                descriptions — visitors leave without calling. Small structural
+                improvements can double the conversion rate.
               </p>
             </div>
           </div>
@@ -58,12 +61,12 @@ export default function About() {
           <div className="w-full px-4 md:w-1/2">
             <div className="mb-8 rounded-xl border border-primary/20 bg-white p-8 shadow-service">
               <h3 className="mb-3 text-xl font-bold text-dark">
-                You don&apos;t know what&apos;s working
+                No visibility into what&apos;s working
               </h3>
               <p className="text-base text-body-color">
-                I set up call tracking and lead tracking so you can see where every
-                job comes from — Google Ads, SEO, Instagram, or referrals. No more
-                guessing which marketing is worth it.
+                Without call tracking and lead source reporting, there&apos;s no way
+                to know which marketing is producing real jobs. Every dollar should
+                be traceable back to a call, a form, or a booked appointment.
               </p>
             </div>
           </div>

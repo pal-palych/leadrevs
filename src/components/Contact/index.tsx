@@ -22,7 +22,6 @@ export default function Contact() {
     setSubmitting(false);
     setSubmitted(true);
 
-    // Fire GA conversion event
     if (typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag("event", "generate_lead", {
         event_category: "form",
@@ -42,11 +41,12 @@ export default function Contact() {
               </svg>
             </div>
             <h2 className="mb-5 text-3xl font-bold text-dark sm:text-4xl md:text-[45px]">
-              Got it — audit on the way
+              Audit request received
             </h2>
             <p className="text-lg text-body-color">
-              I&apos;ll personally review your business and send you a custom
-              audit within 24–48 hours. Check your inbox for a confirmation.
+              A custom review of your site, Google visibility, and competitor
+              landscape will be sent within 48 hours. No sales pitch — just findings
+              and next steps.
             </p>
           </div>
         </div>
@@ -58,28 +58,30 @@ export default function Contact() {
     <section id="contact" className="bg-white py-20 lg:py-[120px]">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          {/* Left: what you get in the audit */}
+          {/* Left: what the audit includes */}
           <div className="w-full px-4 lg:w-5/12">
             <span className="mb-2 block text-lg font-semibold text-primary">
               FREE AUDIT
             </span>
             <h2 className="mb-5 text-3xl font-bold leading-tight text-black sm:text-4xl md:text-[45px]/[55px]">
-              See what&apos;s costing you calls right now
+              Find out why the phone isn&apos;t ringing
             </h2>
             <p className="mb-8 text-base text-body-color">
-              Not a generic PDF. Not a sales pitch. I personally review your
-              business and send you a custom report with specific findings.
+              Every audit is custom. It includes a review of the website, Google
+              visibility, competitor activity, and — if ads are running — where
+              budget is being wasted. The deliverable is a clear, prioritized
+              action plan. No sales pitch. No generic PDF.
             </p>
 
-            <h3 className="mb-5 text-xl font-bold text-dark">What you get:</h3>
+            <h3 className="mb-5 text-xl font-bold text-dark">What&apos;s included:</h3>
             <div className="mb-8 space-y-4 lg:mb-0">
               <div className="flex items-start gap-3">
                 <div className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary">
                   <svg className="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                 </div>
                 <p className="text-base text-body-color">
-                  <strong className="text-dark">Where your site is underperforming</strong> — speed,
-                  structure, missing pages, mobile issues
+                  <strong className="text-dark">Website performance and structure review</strong> — speed,
+                  mobile usability, missing service pages
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -87,8 +89,8 @@ export default function Contact() {
                   <svg className="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                 </div>
                 <p className="text-base text-body-color">
-                  <strong className="text-dark">Which services to prioritize</strong> — based on
-                  search volume, competition, and your margins
+                  <strong className="text-dark">Google ranking and visibility analysis</strong> — keywords,
+                  Map Pack position, search volume
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -96,8 +98,8 @@ export default function Contact() {
                   <svg className="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                 </div>
                 <p className="text-base text-body-color">
-                  <strong className="text-dark">What competitors are doing better</strong> — their
-                  keyword count, page count, review volume vs yours
+                  <strong className="text-dark">Competitor keyword and review comparison</strong> — what
+                  they rank for that you don&apos;t
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -105,8 +107,8 @@ export default function Contact() {
                   <svg className="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                 </div>
                 <p className="text-base text-body-color">
-                  <strong className="text-dark">What&apos;s likely wasting budget</strong> — broad
-                  match keywords, wrong targeting, missing landing pages
+                  <strong className="text-dark">Ad targeting and budget assessment</strong> — if
+                  applicable
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -114,8 +116,8 @@ export default function Contact() {
                   <svg className="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                 </div>
                 <p className="text-base text-body-color">
-                  <strong className="text-dark">What to fix now vs later</strong> — a clear,
-                  prioritized action plan you can use with or without me
+                  <strong className="text-dark">Prioritized action plan</strong> — usable
+                  independently
                 </p>
               </div>
             </div>
@@ -179,7 +181,7 @@ export default function Contact() {
                       <textarea
                         rows={3}
                         name="message"
-                        placeholder="What's your biggest challenge? (not enough calls, bad website, wasted ad spend, etc.)"
+                        placeholder="What's your biggest challenge right now?"
                         className="input-field resize-none"
                       ></textarea>
                     </div>
@@ -190,10 +192,10 @@ export default function Contact() {
                       disabled={submitting}
                       className="bg-primary hover:bg-primary/90 w-full rounded-md p-4 text-base font-semibold text-white transition disabled:opacity-60"
                     >
-                      {submitting ? "Sending..." : "Send Me My Free Audit"}
+                      {submitting ? "Sending..." : "Request Free Audit"}
                     </button>
                     <p className="mt-4 text-center text-sm text-body-color">
-                      No spam. No sales pitch. Just a real audit from a real person.
+                      No cost. No obligation. Results sent within 48 hours.
                     </p>
                   </div>
                 </div>

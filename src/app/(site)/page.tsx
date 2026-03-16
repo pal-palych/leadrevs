@@ -7,8 +7,8 @@ import Service from "@/components/Home/Service";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LeadRevs | Digital Marketing for Local Home Service Businesses",
-  description: "Stop losing leads to competitors. We help HVAC, plumbing, roofing, auto repair, and electrical companies get found on Google, get more calls, and book more jobs. Raleigh-Durham, NC.",
+  title: "LeadRevs | More Calls From Google for Service Businesses in the Triangle",
+  description: "LeadRevs helps plumbers, HVAC companies, roofers, electricians, and local service businesses in Raleigh, Durham, Cary, Apex, and Chapel Hill get more qualified calls from Google through better websites, ads, and local SEO.",
 };
 
 export default function Home() {

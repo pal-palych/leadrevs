@@ -12,17 +12,17 @@ export default function Hero() {
           <div className="w-full px-4 lg:w-6/12 xl:w-5/12">
             <div className="hero-content">
               <h1 className="text-dark mb-3 text-4xl leading-snug font-bold sm:text-[42px] lg:text-[40px] xl:text-[42px]">
-                Get More Calls
+                More Qualified Calls
                 <br />
-                From Google —
+                From Google. Less
                 <br />
-                Without Wasting Money
+                Wasted Ad Spend.
               </h1>
               <p className="text-body-color mb-8 max-w-[480px] text-base">
-                I help Raleigh-area service businesses improve their website,
-                Google visibility, and ads — so they get more real calls, better
-                jobs, and clearer ROI. No bloated retainers. No outsourced
-                account managers.
+                LeadRevs helps service businesses in Raleigh, Durham, Cary, Apex,
+                and Chapel Hill get found on Google, convert more visitors into
+                calls, and see exactly where every lead comes from. No long-term
+                contracts. No vague reporting. Month-to-month, with tracked results.
               </p>
               <ul className="flex flex-wrap items-center gap-8">
                 <li>
@@ -30,7 +30,7 @@ export default function Hero() {
                     href="#contact"
                     className="bg-primary hover:bg-primary/90 inline-flex items-center justify-center rounded-lg px-10 py-4 text-center text-base font-normal text-white lg:px-8 xl:px-10"
                   >
-                    See What&apos;s Costing You Calls
+                    Get a Free Marketing Audit
                   </Link>
                 </li>
                 <li className="leading-none">
@@ -56,7 +56,7 @@ export default function Hero() {
                         />
                       </svg>
                     </span>
-                    How It Works
+                    See How It Works
                   </Link>
                 </li>
               </ul>
@@ -68,25 +68,25 @@ export default function Hero() {
                     <svg className="mt-0.5 size-4 shrink-0 text-primary" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-sm font-medium text-dark">Based in Raleigh-Durham</span>
+                    <span className="text-sm font-medium text-dark">Based in the Triangle</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <svg className="mt-0.5 size-4 shrink-0 text-primary" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-sm font-medium text-dark">You work directly with me</span>
+                    <span className="text-sm font-medium text-dark">Direct communication</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <svg className="mt-0.5 size-4 shrink-0 text-primary" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-sm font-medium text-dark">No long-term contracts</span>
+                    <span className="text-sm font-medium text-dark">Month-to-month</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <svg className="mt-0.5 size-4 shrink-0 text-primary" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-sm font-medium text-dark">Leads, not vanity metrics</span>
+                    <span className="text-sm font-medium text-dark">Every lead tracked</span>
                   </div>
                 </div>
               </div>
