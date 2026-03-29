@@ -12,13 +12,14 @@ export async function POST(request: any) {
   }
 
   const user = await prisma.user.findUnique({
-    where: {
-      email,
-    },
+    where: { email },
   });
 
   if (!user) {
-    throw new Error("Email does not exists");
+    // Return same success message to prevent email enumeration
+    return NextResponse.json("If an account with that email exists, a reset link has been sent.", {
+      status: 200,
+    });
   }
 
   const resetToken = crypto.randomBytes(20).toString("hex");
@@ -55,7 +56,7 @@ export async function POST(request: any) {
       `,
     });
 
-    return NextResponse.json("An email has been sent to your email", {
+    return NextResponse.json("If an account with that email exists, a reset link has been sent.", {
       status: 200,
     });
   } catch (error) {

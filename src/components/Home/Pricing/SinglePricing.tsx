@@ -24,7 +24,9 @@ export default function SinglePricing({ price }: any) {
         },
       },
     );
-    window.location.assign(data);
+    if (typeof data === "string" && data.startsWith("https://checkout.stripe.com/")) {
+      window.location.assign(data);
+    }
   };
 
   return (

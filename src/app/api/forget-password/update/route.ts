@@ -17,7 +17,7 @@ export async function POST(request: any) {
   });
 
   if (!user) {
-    throw new Error("Email does not exists");
+    return new NextResponse("Unable to update password", { status: 400 });
   }
 
   const hashedPassword = await bcrypt.hash(password, 10);

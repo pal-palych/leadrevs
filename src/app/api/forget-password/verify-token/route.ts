@@ -22,5 +22,6 @@ export const POST = async (request: any) => {
     return new NextResponse("Invalid Token or Token Expired", { status: 400 });
   }
 
-  return NextResponse.json(user);
+  // Only return the email, not the full user object with password hash
+  return NextResponse.json({ email: user.email });
 };

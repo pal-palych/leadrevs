@@ -10,25 +10,45 @@ export async function POST(request: any) {
     return new NextResponse("Missing Fields", { status: 400 });
   }
 
-  const exist = await prisma.user.findUnique({
-    where: {
-      email,
-    },
-  });
-
-  if (exist) {
-    throw new Error("Email already exists");
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return new NextResponse("Invalid email format", { status: 400 });
   }
 
-  const hashedPassword = await bcrypt.hash(password, 10);
+  if (password.length < 8) {
+    return new NextResponse("Password must be at least 8 characters", {
+      status: 400,
+    });
+  }
 
-  const user = await prisma.user.create({
-    data: {
-      name,
-      email,
-      password: hashedPassword,
-    },
-  } as any);
+  try {
+    const exist = await prisma.user.findUnique({
+      where: { email },
+    });
 
-  return NextResponse.json(user);
+    if (exist) {
+      // Generic message to prevent email enumeration
+      return NextResponse.json(
+        { message: "If this email is available, your account has been created." },
+        { status: 200 },
+      );
+    }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    await prisma.user.create({
+      data: {
+        name,
+        email,
+        password: hashedPassword,
+      },
+    } as any);
+
+    return NextResponse.json(
+      { message: "If this email is available, your account has been created." },
+      { status: 200 },
+    );
+  } catch (error) {
+    return new NextResponse("Internal Error", { status: 500 });
+  }
 }
