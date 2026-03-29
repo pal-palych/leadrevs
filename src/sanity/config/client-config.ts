@@ -1,5 +1,5 @@
 const config = {
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "placeholder",
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "etdlgxhc",
   title: process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE,
   token: process.env.NEXT_PUBLIC_SANITY_API_TOKEN as string,
   dataset: "production",
